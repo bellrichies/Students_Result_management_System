@@ -1,7 +1,3 @@
-<?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
-$db = new Databases;
-?>
 <div class="bg_form">
 <form id="form_account_summary" class="form" style="margin:0;">
 	<div class="row">

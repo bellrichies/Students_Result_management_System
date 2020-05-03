@@ -1,8 +1,3 @@
-<?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
-$db = new Databases;
-?>
-
 <form id="formFindStudent" class="form">
 	<div class="row" style="background-color: #fbfbfb">
 		<div class="col-md-3" >

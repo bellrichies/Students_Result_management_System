@@ -1,7 +1,3 @@
-<?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
-$db = new Databases;
-?>
 <p><br></p>
 <div id="grade_table" class="table table-responsive">
 	<form method="POST" id="frmForm">

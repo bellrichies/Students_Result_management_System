@@ -1,6 +1,4 @@
 <?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
-$db = new Databases;
 $rows=$db->selectAll('tbl_admin_class');
 ?>
 <div class="bg_form">

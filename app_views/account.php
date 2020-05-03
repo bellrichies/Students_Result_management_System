@@ -1,7 +1,3 @@
-<?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
-$db = new Databases;
-?>
 <div class="row">
     <div class="col-md-8">
         <div class="header fixed ">

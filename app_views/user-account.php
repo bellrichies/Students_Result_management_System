@@ -1,5 +1,3 @@
-
-
 <div class="row">
 <div class="col-md-9">
 	<h5 class="text-primary">User Acccount</h5>

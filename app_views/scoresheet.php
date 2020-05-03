@@ -1,8 +1,3 @@
-<?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
-$db = new Databases;
-?>
-
 <div class="bg_form no_margin" >
   <form id="scoresheetform" method="post" class="no_margin">
   	<div class='row no_margin'>
