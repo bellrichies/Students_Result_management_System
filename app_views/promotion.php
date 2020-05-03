@@ -1,4 +1,6 @@
 <?php
+require_once(__DIR__ . "../../app_dbase/connection.php");
+$db = new Databases;
 $rows=$db->selectAll('tbl_admin_class');
 ?>
 <div class="bg_form">

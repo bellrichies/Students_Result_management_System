@@ -7,6 +7,8 @@
 			<select class="form-control">
 				<option>All Payments</option>
 				<?php 
+				require_once(__DIR__."../../app_dbase/connection.php");
+				$db = new Databases;
 				
 				?>
 			</select>

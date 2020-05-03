@@ -5,6 +5,8 @@
 			<select id="select_class" class="form-control vertical_align">
 				<option value="-1" >SELECT CLASS</option>
 				<?php 
+				require_once(__DIR__ . "../../app_dbase/connection.php");
+				$db = new Databases;
 				$results = $db->selectAll('tbl_admin_class');
 				foreach ($results as $result) {
 					$course = strtoupper($result['class']);
@@ -42,7 +44,6 @@
 				alert("undefined");
 				return false;
 			}
-
 
 			$.ajax({
 				url:"app_model/account_summary.php",

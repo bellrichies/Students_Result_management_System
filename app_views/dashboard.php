@@ -1,3 +1,7 @@
+<?php
+require_once(__DIR__ ."../../app_dbase/connection.php");
+$db = new Databases;
+?>
 <div class="row">
 	<div class="col-md-8">
 		<div class="header">

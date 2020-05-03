@@ -16,7 +16,10 @@
 			        </tr> 
 			      </thead>  
 			      <tbody>
-			      <?php $rows =$db->selectAll('tbl_admin_grades');
+			      <?php
+			       require_once(__DIR__ . "../../app_dbase/connection.php");
+			       $db = new Databases;
+			       $rows =$db->selectAll('tbl_admin_grades');
 			      	$color=0;
 					$colorbg ="#fff";
 					foreach ($rows as $row) {

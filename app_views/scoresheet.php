@@ -5,6 +5,8 @@
   			<select name="level" id="classlist" class="form-control">
   				<option value="">Select Class</option>
   				<?php 
+            require_once(__DIR__ . "../../app_dbase/connection.php");
+            $db = new Databases;
   					$classes=$db->selectAll('tbl_admin_class');
   					$x=1;
   					$y=count($classes);

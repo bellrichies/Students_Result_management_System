@@ -4,6 +4,8 @@
 			<div class="col-md-2">
 				<select class="form-control" id="class_index" name="class_index" style="font-size: 12px;">
 					<?php 
+					require_once(__DIR__."../../app_dbase/connection.php");
+					$db = new Databases;
 					$rows=$db->selectAll('tbl_admin_class');
 					foreach ($rows as $row) {
 					  	$label = strtoupper($row['class']);

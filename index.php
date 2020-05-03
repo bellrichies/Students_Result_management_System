@@ -3,7 +3,6 @@
     include_once("includes/header.php");
 ?>
 
-
 <div class="main_container">
   <h1 class="form-heading"><p><br></p></h1>
   <div class="login-form">
