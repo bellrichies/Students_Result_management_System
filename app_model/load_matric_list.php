@@ -1,8 +1,3 @@
-<?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
-$db = new Databases;
-?>
-  
 <form method="POST" id="frmMatric">
     <div class="row" style="padding-right: 15px; padding-left: 15px;">
       <div class="col-8"><p class="text-primary" style="margin-top:15px;">Student Awaiting Matric number</p></div>
@@ -11,6 +6,8 @@ $db = new Databases;
     <table class="table table-condensed table-striped table-bordered">
         <tbody>
           <?php
+            require_once(__DIR__ . "../../app_dbase/connection.php");
+            $db = new Databases;
             $value = $_POST["value"];
             $where = array("status"=>"admitted","course"=>$value);
             if ($rows = $db->selectWhere("tbl_student_applications",$where)) {

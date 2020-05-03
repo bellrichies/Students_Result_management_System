@@ -1,5 +1,5 @@
 <?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
+require_once(__DIR__ . "../../app_dbase/connection.php");
 $db = new Databases;
 
 $output = '<div id="payment-data" class="table table-responsive">

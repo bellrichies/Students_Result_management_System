@@ -1,6 +1,6 @@
 <?php
-	require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
-	require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_function/function.php");
+	require_once(__DIR__ . "../../app_dbase/connection.php");
+	require_once(__DIR__ . "../../app_function/function.php");
 	$db = new Databases;
 	
 	$stud_class 		= $_POST['level'];

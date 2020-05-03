@@ -1,6 +1,6 @@
 <option value="">Select Subject</option>
 <?php 
-	require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
+	require_once(__DIR__ . "../../app_dbase/connection.php");
 	$db = new Databases;
 
 	$level    = $_POST['level'];

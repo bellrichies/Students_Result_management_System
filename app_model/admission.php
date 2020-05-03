@@ -1,9 +1,7 @@
-<?php
-require_once($_SERVER["DOCUMENT_ROOT"]."/portal/app_dbase/connection.php");
-$db = new Databases;
-?>
-	<table id="dt-basic-checkbox" class="table table-striped table-condensed text-dark" style="font-family: Helvetica;">
+<table id="dt-basic-checkbox" class="table table-striped table-condensed text-dark" style="font-family: Helvetica;">
 	<?php 
+		require_once(__DIR__ . "../../app_dbase/connection.php");
+		$db = new Databases;
 		$value = $_POST['value'];
 		$where = array('course'=>$value,'status'=>'pending');
 		if ($freshers = $db->selectWhere('tbl_student_applications', $where)) {
